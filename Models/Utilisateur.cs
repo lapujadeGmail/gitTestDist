@@ -13,9 +13,12 @@ namespace ProjetGestionTaches.Models
         public String Prenom { get; set; }
         public string Adresse { get; set; }
 
+        // Je mets des infos ici concernant les exécutables
+
         public override string ToString()
         {
-            return ID+" : "+UserName + " ( " + Nom + " , " + Prenom + " )";
+            //return ID+" : "+UserName + " ( " + Nom + " , " + Prenom + " )";
+            return "Utilisateur "ID + " : " + UserName + " ( " + Nom + " , " + Prenom + " )";
         }
     }
 }
